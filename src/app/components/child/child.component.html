@@ -1,0 +1,27 @@
+
+<div class="panel panel-success">
+      <div class="panel-heading">
+            <h3 class="panel-title">Child component</h3>
+      </div>
+      <div class="panel-body">
+            <h3>Married: {{ isMarried }}</h3>
+            <h3>Age: {{ myAge }}</h3>
+
+            
+            <form>
+                <legend>Form title</legend>
+            
+                <div class="form-group">
+                    <label for="">Fullname: </label>
+                    <input
+                    [(ngModel)]="txtFullName" [ngModelOptions]="{standalone: true}"
+                    type="text" class="form-control" id="" placeholder="Input field">
+                </div>
+                <button 
+                (click) = "onSubmitForm()"
+                type="submit" class="btn btn-primary">Send</button>
+            </form>
+            
+      </div>
+</div>
+
